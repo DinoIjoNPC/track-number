@@ -1,0 +1,64 @@
+========================================
+ ACTIVE PRODUCTION GATEWAYS - OXYLUS V2
+========================================
+
+[PRIMARY ENDPOINTS]
+1. SS7 Gateway: https://ss7-gateway.telco-proxy.id/gateway.php
+   - API Key: ss7_gw_2024_k1J9mN8bV7cX4zL2
+   - Rate Limit: 100 req/minute
+   - Status: LIVE
+
+2. HLR Proxy: https://hlr-proxy.secureaccess.id/real-time
+   - Auth Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJIbG9jYXRvciIsInN1YiI6IjEyMzQ1Njc4OTAiLCJleHAiOjE3MTU3NDI0MDB9.8c7f9b2a5d8c3f1e6a9b7f3b29d14a8c4e7f
+   - Coverage: All Indonesian operators
+   - Status: ACTIVE
+
+3. IMSI Catcher Network: https://imsi-catcher-api.onrender.com/v2/query
+   - Key: imsi_net_7f3b29d1
+   - Protocol: REST/WebSocket
+   - Status: 24/7
+
+[OPERATOR BACKDOOR ACCESS]
+Telkomsel HLR: 10.88.22.101:2775
+  Username: m2000_ro
+  Password: Ts3lR0@cc3ss!2024
+  
+XL HLR: 10.99.33.202:2776
+  Username: xl_monitor
+  Password: Xl#M0n1t0r@098
+  
+Indosat HLR: 10.77.44.303:2777
+  Username: indosat_hlr
+  Password: 1nd0s@tHlr#2024
+
+[WEBSOCKET STREAMS]
+wss://realtime-track.wsnode.icu/v2/stream
+wss://telco-ws.darknode.io/live
+
+[DATABASE ACCESS]
+Host: 104.238.183.194
+Port: 5432
+Database: tracking_prod
+Username: track_master
+Password: DbM@st3r#2024!Secure
+
+[ADMIN PANELS]
+1. https://104.238.183.194:10000 (Webmin)
+2. https://telco-admin.proxy.id:2083 (cPanel)
+3. http://localhost:9999 (Local Interface)
+
+[TEST NUMBERS FOR VERIFICATION]
++628118001234 - Telkomsel Test
++628171234567 - XL Test  
++628151234567 - Indosat Test
++628181234567 - Smartfren Test
+
+[EMERGENCY ROTATION ENDPOINTS]
+If primary fails, rotate through:
+1. https://gateway1.oxybackup.com
+2. https://gateway2.ss7-fallback.net
+3. https://reserve.telco-gateway.org
+
+========================================
+ CONFIGURATION COMPLETE - SYSTEM ONLINE
+========================================
